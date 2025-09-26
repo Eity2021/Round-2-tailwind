@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import DynamicButton from "../button/DynamicButton";
 import logo from "../../image/logo/greenweblogo-green 1.png";
-
+import { X } from "lucide-react";
 export default function MobileResponsive({ setIsOpen, isOpen }) {
   return (
     <div>
@@ -18,20 +18,7 @@ export default function MobileResponsive({ setIsOpen, isOpen }) {
             className="text-gray-900 dark:text-white focus:outline-none"
             onClick={() => setIsOpen(false)}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <X />
           </button>
         </div>
         <div className="flex flex-col mt-4 space-y-2 px-6">
@@ -45,6 +32,17 @@ export default function MobileResponsive({ setIsOpen, isOpen }) {
             onClick={() => setIsOpen(false)}
           >
             Home
+          </NavLink>
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              `text-heading dark:text-white px-3 py-2 rounded-md text-sm  font-sans  ${
+                isActive ? "font-semibold" : "font-regular"
+              }`
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            Services
           </NavLink>
           <NavLink
             to="/about"
@@ -68,17 +66,7 @@ export default function MobileResponsive({ setIsOpen, isOpen }) {
           >
             Contact
           </NavLink>
-          <NavLink
-            to="/services"
-            className={({ isActive }) =>
-              `text-heading dark:text-white px-3 py-2 rounded-md text-sm  font-sans  ${
-                isActive ? "font-semibold" : "font-regular"
-              }`
-            }
-            onClick={() => setIsOpen(false)}
-          >
-            Services
-          </NavLink>
+
           <div className="mt-4">
             <DynamicButton variant="outlined" size="sm">
               Login

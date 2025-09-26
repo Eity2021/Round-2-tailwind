@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import MobileResponsive from "./MobileResponsive";
 import DynamicButton from "../button/DynamicButton";
 import ToggleTheme from "../toogleTheme/ToggleTheme";
@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-b from-backgroundColorOne to-backgroundColorTwo dark:from-gray-800/80 dark:to-gray-900/20 px-6 py-4">
+    <div className="bg-gradient-to-b from-backgroundColorOne to-backgroundColorTwo dark:from-darkColorMode dark:to-darkColorMode px-6 py-4">
       <nav className="flex justify-between items-center container mx-auto">
         {/* Logo */}
         <span className="text-gray-900 dark:text-white font-bold text-xl">
@@ -18,7 +18,7 @@ export default function Navbar() {
             <img
               src={logo}
               alt="greenweblogo-green 1"
-              className=" md:h-full h-12"
+              // className=" md:h-full h-12"
             />
           </NavLink>
         </span>
@@ -82,7 +82,7 @@ export default function Navbar() {
             className="md:hidden text-gray-900 dark:text-white focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <Menu /> : <X />}
+            {isOpen ? <X /> : <Menu />}
           </button>
         </div>
       </nav>
