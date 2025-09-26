@@ -72,7 +72,9 @@ export default function Navbar() {
         <div className="flex items-center space-x-3">
           <ToggleTheme />
           <div className="hidden md:block">
-            <DynamicButton>Login</DynamicButton>
+            <DynamicButton variant="outlined" size="sm">
+              Login
+            </DynamicButton>
           </div>
 
           {/* Mobile Hamburger */}

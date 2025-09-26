@@ -80,7 +80,9 @@ export default function MobileResponsive({ setIsOpen, isOpen }) {
             Services
           </NavLink>
           <div className="mt-4">
-            <DynamicButton>Login</DynamicButton>
+            <DynamicButton variant="outlined" size="sm">
+              Login
+            </DynamicButton>
           </div>
         </div>
       </div>

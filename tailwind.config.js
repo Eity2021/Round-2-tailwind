@@ -5,11 +5,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1D4ED8",
+        primary: "#1C9876",
         secondary: "#F59E0B",
         backgroundColorOne: "#E6EEEC",
         backgroundColorTwo: "#FFFFFF00",
         heading: "#000000",
+        button: "#1C9876",
+        buttonHover: "#22a580",
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui"],
