@@ -19,6 +19,8 @@ module.exports = {
         sans: ["Inter", "ui-sans-serif", "system-ui"],
         heading: ["Poppins", "ui-sans-serif", "system-ui"],
         manrope: ["Manrope", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        arial: ["Arial", "sans-serif"],
       },
       fontSize: {
         xs: "0.75rem",
