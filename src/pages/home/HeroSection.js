@@ -17,7 +17,7 @@ export default function HeroSection() {
                             <div className="space-y-6">
                                 <div className="relative">
                                     <h3 className="md:text-6xl  text-[34px] font-bold text-heading dark:text-white md:leading-[60px] leading-[40px]  lg:max-w-2xl w-100% " >Your SEO Swiss Army  Knife, Right In The  Browser.  </h3>
-                                    <img src={fireIcon} alt="fireIcon" className='absolute bottom-0 md:left-[240px] right-[102px] sm:block hidden' />
+                                    <img src={fireIcon} alt="fireIcon" className='absolute bottom-0 md:left-[240px] right-[102px] lg:block hidden' />
                                 </div>
                                 <p className="text-paragraph dark:text-gray-300 text-sm leading-relaxed max-w-lg">
                                     One click reveals that SEO score, traffic, backlinks, and authority of
