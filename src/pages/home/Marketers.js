@@ -14,7 +14,7 @@ const testimonials = [
         id: 2,
         name: "Jane Doe",
         role: "Client of SEO at ABC Agency",
-        image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face",
+        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
         rating: 5,
         text: "I have been taking gym and fitness training here since a long time and I found here so much easy, comfort and flexibility. The mentors are so good and they train me very well."
     },
@@ -61,31 +61,9 @@ export default function Marketers() {
     const goToSlide = (index) => {
         setCurrentSlide(index);
         setIsAutoPlaying(false);
-        // Resume auto-play after 5 seconds
         setTimeout(() => setIsAutoPlaying(true), 7000);
     };
 
-    // const nextSlide = () => {
-    //     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-    //     setIsAutoPlaying(false);
-    //     setTimeout(() => setIsAutoPlaying(true), 5000);
-    // };
-
-    // const prevSlide = () => {
-    //     setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-    //     setIsAutoPlaying(false);
-    //     setTimeout(() => setIsAutoPlaying(true), 5000);
-    // };
-
-    // Calculate which testimonials to show based on screen size and current slide
-    // const getVisibleTestimonials = () => {
-    //     const items = [];
-    //     for (let i = 0; i < 2; i++) {
-    //         const index = (currentSlide + i) % testimonials.length;
-    //         items.push(testimonials[index]);
-    //     }
-    //     return items;
-    // };
 
 
 
@@ -98,18 +76,17 @@ export default function Marketers() {
                     </h2>
                 </div>
                 <div className="relative">
-
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden ">
                         <div
                             className="flex transition-transform duration-500 ease-in-out"
                             style={{
                                 transform: `translateX(-${currentSlide * (100 / testimonials.length)}%)`
                             }}
                         >
-                            {testimonials.map((testimonial, index) => (
+                            {testimonials.map((testimonial) => (
                                 <div
-                                    key={testimonial.id} className="w-full md:w-1/2 flex-shrink-0 px-4 pb-24">
-                                    <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md  h-full mx-2">
+                                    key={testimonial.id} className="w-full md:w-1/2 flex-shrink-0 px-4 pb-8">
+                                    <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-md  mx-2">
                                         {/* Stars */}
                                         <div className="flex items-center gap-1 mb-7">
                                             {renderStars(testimonial.rating)}
@@ -127,7 +104,6 @@ export default function Marketers() {
                                         </div>
 
                                     </div>
-
                                     <div className="flex items-center pt-10">
                                         <img
                                             src={testimonial.image}
