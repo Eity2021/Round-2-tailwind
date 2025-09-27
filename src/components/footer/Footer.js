@@ -9,13 +9,13 @@ export default function Footer() {
       <footer className="bg-gradient-to-b from-[#49A4F8]/5 to-[#0FD1BA4A]/5 dark:from-darkColorMode dark:to-darkColorMode pt-80">
         <div className="container mx-auto px-6 py-12">
           {/* Top Section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Logo + Description */}
-            <div className="col-span-2">
+            <div className="lg:col-span-2">
               <div>
                 <img src={logo_footer} alt="" />
               </div>
-              <p className="mt-3 text-sm text-paragraph dark:text-gray-300  text-justify md:w-[400px] w-100% leading-tight font-medium font-sans">
+              <p className="mt-3 text-sm text-paragraph dark:text-gray-300  text-justify xl:w-[400px] w-100% leading-tight font-medium font-sans">
                 Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex.
