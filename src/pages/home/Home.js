@@ -4,6 +4,7 @@ import Exploration from "./Exploration";
 import Faq from "./Faq";
 import Glance from "./Glance";
 import HowItWorksSection from "./HowItWorksSection";
+import Marketers from "./Marketers";
 import Partners from "./Partners";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <HowItWorksSection></HowItWorksSection>
       <Glance></Glance>
       <Banner></Banner>
+      <Marketers></Marketers>
       <Exploration></Exploration>
       <Faq></Faq>
       <Footer></Footer>
