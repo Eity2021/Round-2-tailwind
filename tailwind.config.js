@@ -14,6 +14,7 @@ module.exports = {
         paragraph: "#595959",
         button: "#1C9876",
         buttonHover: "#22a580",
+        footer_heading: "#171717",
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui"],

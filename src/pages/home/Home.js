@@ -1,3 +1,4 @@
+import Footer from "../../components/footer/Footer";
 import Banner from "./Banner";
 import Exploration from "./Exploration";
 import Faq from "./Faq";
@@ -12,6 +13,7 @@ export default function Home() {
       <Banner></Banner>
       <Exploration></Exploration>
       <Faq></Faq>
+      <Footer></Footer>
     </div>
   );
 }
