@@ -18,7 +18,7 @@ export default function Navbar() {
             <img
               src={logo}
               alt="greenweblogo-green 1"
-              // className=" md:h-full h-12"
+              className=" lg:w-full w-36"
             />
           </NavLink>
         </span>
@@ -28,8 +28,7 @@ export default function Navbar() {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `text-heading dark:text-white px-3 py-2 rounded-md text-sm font-sans ${
-                isActive ? "font-semibold" : "font-regular"
+              `text-heading dark:text-white px-3 py-2 rounded-md text-sm font-sans ${isActive ? "font-semibold" : "font-regular"
               }`
             }
           >
@@ -39,8 +38,7 @@ export default function Navbar() {
           <NavLink
             to="/services"
             className={({ isActive }) =>
-              `text-heading dark:text-white px-3 py-2 rounded-md text-sm font-sans   ${
-                isActive ? "font-semibold" : "font-regular"
+              `text-heading dark:text-white px-3 py-2 rounded-md text-sm font-sans   ${isActive ? "font-semibold" : "font-regular"
               }`
             }
           >
@@ -49,8 +47,7 @@ export default function Navbar() {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `text-heading dark:text-white px-3 py-2 rounded-md text-sm  font-sans  ${
-                isActive ? "font-semibold" : "font-regular"
+              `text-heading dark:text-white px-3 py-2 rounded-md text-sm  font-sans  ${isActive ? "font-semibold" : "font-regular"
               }`
             }
           >
@@ -59,8 +56,7 @@ export default function Navbar() {
           <NavLink
             to="/contact"
             className={({ isActive }) =>
-              `text-heading dark:text-white px-3 py-2 rounded-md text-sm  font-sans  ${
-                isActive ? "font-semibold" : "font-regular"
+              `text-heading dark:text-white px-3 py-2 rounded-md text-sm  font-sans  ${isActive ? "font-semibold" : "font-regular"
               }`
             }
           >
