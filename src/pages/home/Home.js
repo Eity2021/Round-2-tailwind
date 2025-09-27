@@ -6,10 +6,12 @@ import Glance from "./Glance";
 import HowItWorksSection from "./HowItWorksSection";
 import Marketers from "./Marketers";
 import Partners from "./Partners";
+import HeroSection from "./HeroSection";
 
 export default function Home() {
   return (
     <div className="">
+      <HeroSection></HeroSection>
       <Partners></Partners>
       <HowItWorksSection></HowItWorksSection>
       <Glance></Glance>

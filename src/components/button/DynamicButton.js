@@ -10,7 +10,7 @@ export default function DynamicButton({
   const sizeClasses = {
     sm: "px-8 py-1 text-sm",
     md: "px-8 py-2 text-sm",
-    lg: "px-12 py-3 text-sm font-bold font-sans ",
+    lg: "px-12 py-3 md:text-sm text-[12px] font-bold font-sans ",
   };
 
   const variantClasses = {
