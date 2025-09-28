@@ -1,6 +1,5 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
+import { Swiper, SwiperSlide } from "swiper/react";
 import partners1 from "../../image/slider/image 116.png";
 import partners2 from "../../image/slider/image 117.png";
 import partners3 from "../../image/slider/image 118.png";
@@ -26,7 +25,7 @@ const partners = [
 export default function Partners() {
   return (
     <div className="bg-gradient-to-b from-white to-white dark:from-darkColorMode dark:to-darkColorMode ">
-      <div className="container mx-auto py-80">
+      <div className="container mx-auto py-80 lg:px-0 px-4">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={20}

@@ -10,18 +10,18 @@ import DynamicButton from '../../../components/button/DynamicButton';
 export default function HeroSection() {
     return (
         <div>
-            <div className="relative bg-gradient-to-t from-white to-backgroundColorOne dark:from-darkColorMode dark:to-darkColorMode  overflow-hidden pb-[120px] pt-[80px]">
+            <div className="relative bg-gradient-to-t from-white to-backgroundColorOne dark:from-darkColorMode dark:to-darkColorMode  overflow-hidden lg:pb-[120px] pb-[80px] pt-[80px]">
                 <div className=" mx-auto lg:px-0 px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                         {/* Left Content */}
-                        <div className="space-y-8 w-full max-w-6xl  sm:pl-6 lg:pl-10 xl:pl-[20px] 2xl:pl-[80px] 3xl-[200px]">
+                        <div className="space-y-8 w-full max-w-6xl  sm:pl-6 lg:pl-10 xl:pl-[20px] 2xl:pl-[180px] ">
                             <div className="space-y-6">
                                 <div className="relative">
-                                    <h3 className="xl:text-6xl lg:text-5xl md:text-6xl  sm:text-6xl text-[35px] sm:leading-0 leading-[40px] font-bold text-heading dark:text-white lg:w-[600px] w-100%  lg:text-left text-center ">
+                                    <h3 className="xl:text-7xl lg:text-5xl md:text-7xl  sm:text-7xl text-[35px] sm:leading-0 xl:leading-[63px] font-manrope font-bold text-heading dark:text-white xl:w-[600px] w-100%  lg:text-left text-center ">
                                         Your SEO Swiss Army  Knife, Right In The  Browser.
                                     </h3>
-                                    <img src={fireIcon} alt="fireIcon" className='absolute bottom-0 md:left-[240px] right-[102px] lg:block hidden' />
-                                    <img src={heroIcon} alt="heroIcon" className='absolute xl:top-[50px] xl:left-[256px] lg:top-[50px] lg:left-[0px] sm:top-[50px] sm:left-[252px] top-[34px] left-[0px]  z-[-1]' />
+                                    <img src={fireIcon} alt="fireIcon" className='absolute bottom-0 md:left-[210px] right-[102px] lg:block hidden' />
+                                    <img src={heroIcon} alt="heroIcon" className='absolute xl:top-[50px] xl:left-[180px] lg:top-[50px] lg:left-[0px] sm:top-[50px] sm:left-[252px] top-[34px] left-[0px]  z-[-1]' />
 
                                 </div>
                                 <p className="text-paragraph dark:text-gray-300 text-sm leading-relaxed xl:w-[600px] w-100% lg:text-left text-center">

@@ -9,7 +9,7 @@ export default function StepCard({ number, icon, text }) {
                     {number}
                 </p>
             </div>
-            <div className="flex-1 text-center max-w-xs mx-auto mb-12 lg:mb-0 lg:z-10  p-4">
+            <div className="flex-1 text-center max-w-xs mx-auto mb-0 lg:mb-12 lg:z-10  p-4">
                 <div className="flex justify-center">{icon}</div>
                 <p className="text-[20px] font-medium text-paragraph dark:text-gray-300 leading-relaxed font-manrope">
                     {text}

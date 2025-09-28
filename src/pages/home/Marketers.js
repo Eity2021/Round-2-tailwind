@@ -53,7 +53,7 @@ export default function Marketers() {
 
     return (
         <div className="bg-gradient-to-b from-white to-white dark:from-darkColorMode dark:to-darkColorMode py-20">
-            <div className="w-full container mx-auto px-4 py-12">
+            <div className="w-full container mx-auto px-4 ">
                 <div className="text-center mb-12">
                     <h2 className="text-[28px] sm:text-2xl  font-bold text-heading dark:text-white mb-2">
                         Loved By SEOs And Marketers
