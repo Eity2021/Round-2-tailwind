@@ -3,10 +3,10 @@ import Banner from "./Banner";
 import Exploration from "./Exploration";
 import Faq from "./Faq";
 import Glance from "./Glance";
-import HowItWorksSection from "./HowItWorksSection";
+import HowItWorksSection from "./works/HowItWorksSection";
 import Marketers from "./Marketers";
 import Partners from "./Partners";
-import HeroSection from "./HeroSection";
+import HeroSection from "./heroBanner/HeroSection";
 
 export default function Home() {
   return (

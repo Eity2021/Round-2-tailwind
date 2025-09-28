@@ -32,7 +32,7 @@ export default function Partners() {
           spaceBetween={20}
           slidesPerView={2}
           autoplay={{ delay: 6000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           navigation
           breakpoints={{
             640: { slidesPerView: 3, spaceBetween: 20 },

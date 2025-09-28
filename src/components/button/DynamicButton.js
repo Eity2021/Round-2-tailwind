@@ -10,12 +10,12 @@ export default function DynamicButton({
   const sizeClasses = {
     sm: "px-8 py-1 text-sm",
     md: "px-8 py-2 text-sm",
-    lg: "px-12 py-3 md:text-sm text-[12px] font-bold font-sans ",
+    lg: "md:px-12 px-6 py-3 md:text-sm text-[12px] font-bold font-sans ",
   };
 
   const variantClasses = {
     primary:
-      "bg-button text-white hover:bg-buttonHover dark:bg-button dark:hover:bg-buttonHover ",
+      "bg-button text-white hover:bg-buttonHover dark:bg-button dark:hover:bg-buttonHover transition transform hover:scale-110 hover:rotate-2 animate-fadeIn",
     secondary:
       "bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 ",
     outlined:

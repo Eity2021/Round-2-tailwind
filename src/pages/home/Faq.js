@@ -40,7 +40,7 @@ export default function Faq() {
   };
   return (
     <div className="bg-gradient-to-b from-white to-white dark:from-darkColorMode dark:to-darkColorMode pt-80">
-      <section className="container mx-auto py-16 px-6">
+      <section className="container mx-auto px-6">
         <h2 className="text-xl sm:text-2xl font-bold font-manrope text-center text-heading dark:text-white mb-12">
           Frequently Asked Questions
         </h2>

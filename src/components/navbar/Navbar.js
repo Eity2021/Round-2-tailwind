@@ -45,13 +45,13 @@ export default function Navbar() {
             Services
           </NavLink>
           <NavLink
-            to="/about"
+            to="/blog"
             className={({ isActive }) =>
               `text-heading dark:text-white px-3 py-2 rounded-md text-sm  font-sans  ${isActive ? "font-semibold" : "font-regular"
               }`
             }
           >
-            About
+            Blog
           </NavLink>
           <NavLink
             to="/contact"

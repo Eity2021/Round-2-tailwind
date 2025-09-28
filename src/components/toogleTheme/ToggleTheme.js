@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-
+import sun from "../../image/others/sun.png";
+import moon from "../../image/others/moon.png";
 export default function ToggleTheme() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
@@ -23,7 +24,7 @@ export default function ToggleTheme() {
         cursor-pointer
       "
     >
-      {theme === "dark" ? "☀️" : "🌙 "}
+      {theme === "dark" ? <img src={sun} alt="sun" className="w-8 h-8" /> : <img src={moon} alt="moon" className="w-8 h-8" />}
     </div>
   );
 }

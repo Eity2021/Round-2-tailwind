@@ -35,22 +35,24 @@ const features = [
 export default function Glance() {
   return (
     <div>
-      <section className="bg-gradient-to-b from-backgroundColorOne to-backgroundColorTwo dark:from-darkColorMode dark:to-darkColorMode py-20 ">
+      <section className="bg-gradient-to-b from-backgroundColorOne to-backgroundColorTwo dark:from-darkColorMode dark:to-darkColorMode py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-xl md:text-2xl font-manrope leading-[40px] md:leading-[56px]  font-bold text-center text-heading dark:text-white mb-12">
-            Everything You Need To <br /> Know, At A Glance
-          </h2>
+          <div className="flex justify-center">
+            <h2 className="text-[26px] sm:text-[36px] md:text-2xl font-manrope leading-[40px] md:leading-[56px] text-center font-bold text-heading dark:text-white mb-12 lg:w-[500px] w-[100%]">
+              Everything You Need To Know, At A Glance
+            </h2>
+          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  max-auto">
+          {/* Card container */}
+          <div className="flex flex-wrap justify-center gap-6">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-xl p-6 hover:shadow-lg transition"
+                className="bg-white dark:bg-gray-800 rounded-xl p-6 hover:shadow-lg transition w-full sm:w-[45%] lg:w-[30%]"
               >
                 <div
-                  className="w-[60px] h-[60px] bg-white dark:bg-gray-900  rounded-[50%] flex items-center justify-center my-2"
-                  style={{ boxShadow: "0 0 40px 0px rgba(0, 0, 0, 0.1)" }}
-                >
+                  className="w-[60px] h-[60px] bg-white dark:bg-gray-900 rounded-[50%] flex items-center justify-center my-2"
+                  style={{ boxShadow: "0 0 40px 0px rgba(0, 0, 0, 0.1)" }}>
                   <img src={feature.icon} alt="" />
                 </div>
                 <h3 className="text-base font-semibold text-heading dark:text-white mb-2 font-sans">
